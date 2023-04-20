@@ -35,7 +35,7 @@ const HomeScreen = () => {
                 </Text>
                 <Text className="font-bold text-xl">
                     Current Location{' '}
-                    <ChevronDownIcon size={20} color="#00CCBB"/>
+                    <ChevronDownIcon size={30} color="#00CCBB"/>
                 </Text>
             </View>
 
