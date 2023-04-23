@@ -67,21 +67,23 @@ const HomeScreen = () => {
                 {/* Catagories */}
                 <Categories />
 
-                {/* Features Row */}
+                {/* Features */}
                 <FeaturedRow
                     title="Featured"
                     description="Paid placements from our partners"
                     featuredCategory="featured"
                 />
 
+                {/* Tasty Discount */}
                 <FeaturedRow
-                    title="Featured"
+                    title="Tasty Discount"
                     description="Paid placements from our partners"
                     featuredCategory="featured"
                 />
 
+                {/* Offers near you */}
                 <FeaturedRow
-                    title="Featured"
+                    title="Offers near you"
                     description="Paid placements from our partners"
                     featuredCategory="featured"
                 />
