@@ -24,13 +24,39 @@ const FeaturedRow = ({ id, title, description }) => {
                 className="pt-4"
             >
                 {/* RestaurantCards... */}
-                <RestaurantCard 
+                <RestaurantCard
                     id={123}
                     imgUrl="https://links.papareact.com/gn7"
                     title="Yo! Sushi"
                     rating={4.5}
                     genre="Japanese"
-                    address="123 Main St"
+                    address="123 Main Street"
+                    short_description="This is a Test description"
+                    dishes={[]}
+                    long={20}
+                    lat={0}
+                />
+
+                <RestaurantCard
+                    id={123}
+                    imgUrl="https://links.papareact.com/gn7"
+                    title="Yo! Sushi"
+                    rating={4.5}
+                    genre="Japanese"
+                    address="123 Main Street"
+                    short_description="This is a Test description"
+                    dishes={[]}
+                    long={20}
+                    lat={0}
+                />
+
+                <RestaurantCard
+                    id={123}
+                    imgUrl="https://links.papareact.com/gn7"
+                    title="Yo! Sushi"
+                    rating={4.5}
+                    genre="Japanese"
+                    address="123 Main Street"
                     short_description="This is a Test description"
                     dishes={[]}
                     long={20}
