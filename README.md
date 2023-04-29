@@ -31,3 +31,8 @@ module.exports = {
 npm install @react-navigation/native
 npx expo install react-native-screens react-native-safe-area-context
 ```
+
+## Heroicons in React Native
+```
+npm i react-native-heroicons
+```
