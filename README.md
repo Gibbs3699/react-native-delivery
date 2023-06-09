@@ -45,8 +45,53 @@ module.exports = function (api) {
 npm install @react-navigation/native
 npx expo install react-native-screens react-native-safe-area-context
 npm install @react-navigation/native-stack
-```
 
+// App.js
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import HomeScreen from './screens/HomeScreen';
+
+const Stack = createNativeStackNavigator();
+
+export default function App() {
+  return (
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="Home" component={HomeScreen}/>
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+}
+
+\\ to hide navigation
+export default function App() {
+  return (
+    <NavigationContainer>
+      <Stack.Navigator screenOptions={{
+        headerShown: false
+      }}>
+        <Stack.Screen name="Home" component={HomeScreen}/>
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+}
+
+\\ HomeScreen.js
+import { View, Text, SafeAreaView } from 'react-native'
+import React from 'react'
+
+const HomeScreen = () => {
+    return (
+        <SafeAreaView>
+            <View>
+                <Text className="text-red-500">HomeScreen</Text>
+            </View>
+        </SafeAreaView>
+    )
+}
+
+export default HomeScreen
+```
 ## Heroicons in React Native
 ```
 npm i react-native-heroicons
